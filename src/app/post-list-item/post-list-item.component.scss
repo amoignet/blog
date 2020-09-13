@@ -1,0 +1,43 @@
+#likeIt {
+  background-color:white;
+  color: black;
+  border: 2px solid green;
+}
+
+#likeIt:hover {
+  background-color: green;
+  color: white;
+}
+
+#dontLikeIt {
+  background-color:white;
+  color: black;
+  border: 2px solid red;
+}
+
+#dontLikeIt:hover {
+  background-color: red;
+  color: white;
+}
+
+#date {
+  color:blue;
+}
+
+#topLine {
+  display:flex;
+  justify-content: space-between;
+}
+
+#buttons {
+  display:flex;
+  justify-content: center;
+}
+
+.likeButtons {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  color: white;
+  border: none;
+}

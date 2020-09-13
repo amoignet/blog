@@ -1,0 +1,21 @@
+
+<li class= list-group-item>
+
+  <div id=topLine >
+    <h4 [ngStyle]="{color: onGetColor()}" >{{postTitle}}</h4>
+    <p id= date >Posté le: {{postDate | date:'short'}}</p>
+  </div>
+
+  <p>Description: {{postContent}}</p>
+
+  <p [ngStyle]="{color: onGetColor()}" >Nombre de Like: {{postLike}}</p>
+
+  <div id=buttons >
+    <button class="likeButtons" id=likeIt (click)="onLikeIt()">Like it</button>
+    <button class="likeButtons" id=dontLikeIt (click)="onDontLikeIt()">Don't like it</button>
+  </div>
+
+  <button (click)="onDelete(id)">Supprimer ce post</button>
+
+</li>
+
